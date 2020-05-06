@@ -346,9 +346,27 @@ article .credits span {
 	border-top-right-radius: 40px;
 }
 
-.sidebar-ad {
+.sidebar-ads {
 	margin: 30px 0;
 	text-align: center;
+	line-height: 1em;
+}
+
+.sidebar-category ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: 1em;
+}
+
+.sidebar-category li {
+	padding: 10px 5px;
+	border-top: 1px solid #ddd;
+}
+
+.sidebar-category i {
+	margin-right: 5px;
+	font-size: .75em;
 }
 
 footer {
