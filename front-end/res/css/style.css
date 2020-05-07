@@ -267,7 +267,7 @@ article h6 {
 }
 
 .post-breadcrumb {
- font-size: 14px;
+	font-size: 14px;
 }
 
 .post-breadcrumb i {
@@ -329,11 +329,6 @@ article .credits span {
 	border: 1px solid #ddd;
 }
 
-.sidebar-latest,
-.sidebar-category {
-	margin: 30px 0;
-}
-
 .sidebar-latest h4,
 .sidebar-category h4 {
 	margin: 15px 0;
@@ -344,6 +339,38 @@ article .credits span {
 	font-weight: bold;
 	line-height: 40px;
 	border-top-right-radius: 40px;
+}
+
+.sidebar-latest,
+.sidebar-category {
+	margin: 30px 0;
+}
+
+.sidebar-latest .latest-item {
+	padding: 10px 5px;
+	border-top: 1px solid #ddd;
+}
+
+.sidebar-latest .featured {
+	display: inline-block;
+	width: 50px;
+	margin-right: 10px;
+	vertical-align: top;
+	overflow: hidden;
+}
+
+.sidebar-latest .featured img {
+	max-width: initial;
+	height: 50px;
+}
+
+.sidebar-latest .headline {
+	display: inline-block;
+	width: calc(100% - 65px);
+}
+
+.sidebar-latest .headline p {
+	margin: 0;
 }
 
 .sidebar-ads {
