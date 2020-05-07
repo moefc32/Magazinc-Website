@@ -67,10 +67,13 @@
 		<div class="row latest-slider">
 			<div class="col-md-8">
 				<img src="res/img/dummy.jpg" alt="">
+				<span class="title">Berita 01</span>
 			</div>
 			<div class="col-md-4">
 				<img src="res/img/dummy.jpg" alt="" style="margin-bottom: 15px;">
+				<span class="title">Berita 02</span>
 				<img src="res/img/dummy.jpg" alt="">
+				<span class="title">Berita 03</span>
 			</div>
 		</div>
 		<div class="row">
@@ -78,7 +81,43 @@
 				asdf
 			</section>
 			<aside class="col-md-4">
-				asdf
+				<form action="search" class="sidebar-search">
+					<input type="text" placeholder="Cari...">
+					<a href="#" class="btn-search">
+						<i class="fa fa-search fa-fw"></i>
+					</a>
+				</form>
+				<div class="sidebar-ads">
+					<a href="#">
+						<img src="res/img/ad.png" alt="Advertisement">
+					</a>
+				</div>
+				<div class="sidebar-category">
+					<h4>Kategori</h4>
+					<ul class="sidebar-category">
+						<a href="#">
+							<li><i class="fas fa-tags fa-fw"></i> Pendidikan dan Kampus</li>
+						</a>
+						<a href="#">
+							<li><i class="fas fa-tags fa-fw"></i> Penelitian dan Lomba</li>
+						</a>
+						<a href="#">
+							<li><i class="fas fa-tags fa-fw"></i> Pengabdian Masyarakat</li>
+						</a>
+						<a href="#">
+							<li><i class="fas fa-tags fa-fw"></i> Dunia Kerja dan Keprofesian</li>
+						</a>
+						<a href="#">
+							<li><i class="fas fa-tags fa-fw"></i> Ekstra</li>
+						</a>
+						<a href="#">
+							<li><i class="fas fa-tags fa-fw"></i> Kemahasiswaan</li>
+						</a>
+						<a href="#">
+							<li><i class="fas fa-tags fa-fw"></i> Bebas Berisik!</li>
+						</a>
+					</ul>
+				</div>
 			</aside>
 		</div>
 	</div>
@@ -87,12 +126,12 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12 col-md-5 footer-info">
-						<h2>Magazinc!</h2>
+						<h3>Magazinc!</h3>
 						<p>Kami bergerak dengan semangat untuk memberikan berbagai informasi yang aktual dan faktual kepada seluruh mahasiswa Universitas Telkom.</p>
-						<p>Surel : <a href="mailto:magazinconline@gmail.com">magazinconline@gmail.com</a></p>
+						<p>Surel : <a href="mailto:magazinconline@gmail.com"><strong>magazinconline@gmail.com</strong></a></p>
 					</div>
 					<div class="col-sm-6 col-md-3 col-md-offset-1 footer-links">
-						<h3>Halaman</h3>
+						<h4>Halaman</h4>
 						<ul>
 							<li><a href="#">Profil</a></li>
 							<li><a href="#">Kerja Sama</a></li>
@@ -105,7 +144,7 @@
 						</ul>
 					</div>
 					<div class="col-sm-6 col-md-3 footer-links">
-						<h3>Pranala Lainnya</h3>
+						<h4>Pranala Lainnya</h4>
 						<ul>
 							<li><a href="#" target="_blank">Magazinc! Lab</a></li>
 							<li><a href="https://telkomuniversity.ac.id" target="_blank">Universitas Telkom</a></li>
@@ -113,7 +152,7 @@
 						</ul>
 					</div>
 					<div class="col-sm-6 col-md-3 footer-contact">
-						<h3>Media Sosial</h3>
+						<h4>Media Sosial</h4>
 						<div class="social-links">
 							<a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
 							<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -127,11 +166,11 @@
 			<div class="copyright">
 				&copy; <strong>Magazinc!</strong>
 				<script>
-					if (new Date().getFullYear() > 2020) {
-						document.write('2020 - ' + new Date().getFullYear());
-					} else {
-						document.write(new Date().getFullYear());
-					}
+				if (new Date().getFullYear() > '2020') {
+					document.write( '2020 - ' + new Date().getFullYear() );
+				} else {
+					document.write( new Date().getFullYear() );
+				}
 				</script>
 			</div>
 		</div>

@@ -123,7 +123,7 @@ header {
 	position: relative;
 	color: #004289;
 	transition: .25s;
-	font-size: 14px;
+	font-size: .9em;
 	font-weight: 500;
 }
 
@@ -195,7 +195,7 @@ header {
 .category-nav {
 	line-height: 45px;
 	background: #eee;
-	font-size: 14px;
+	font-size: .9em;
 }
 
 .category-nav ul {
@@ -229,6 +229,10 @@ header {
 	background: #ddd;
 }
 
+.latest-slider {
+	margin-bottom: 30px;
+}
+
 article h1,
 article h2,
 article h3,
@@ -239,27 +243,27 @@ article h6 {
 }
 
 article h1 {
-	font-size: 32px;
+	font-size: 2em;
 }
 
 article h2 {
-	font-size: 26px;
+	font-size: 1.85em;
 }
 
 article h3 {
-	font-size: 24px;
+	font-size: 1.7em;
 }
 
 article h4 {
-	font-size: 22px;
+	font-size: 1.55em;
 }
 
 article h5 {
-	font-size: 20px;
+	font-size: 1.4em;
 }
 
 article h6 {
-	font-size: 18px;
+	font-size: 1.25em;
 }
 
 .post-header {
@@ -267,7 +271,7 @@ article h6 {
 }
 
 .post-breadcrumb {
-	font-size: 14px;
+	font-size: .9em;
 }
 
 .post-breadcrumb i {
@@ -281,7 +285,7 @@ article h6 {
 
 .post-date {
 	margin-bottom: 15px;
-	font-size: 12px;
+	font-size: .8em;
 	color: #999;
 }
 
@@ -293,7 +297,7 @@ article .credits {
 	margin: 50px 0 30px;
 	padding: 15px;
 	background: #eee;
-	font-size: 14px;
+	font-size: .9em;
 	line-height: 1.618em;
 }
 
@@ -335,7 +339,7 @@ article .credits span {
 	padding: 0 15px;
 	background: #00aff0;
 	color: #fff;
-	font-size: 16px;
+	font-size: 1em;
 	font-weight: bold;
 	line-height: 40px;
 	border-top-right-radius: 40px;
@@ -353,7 +357,7 @@ article .credits span {
 
 .sidebar-latest .featured {
 	display: inline-block;
-	width: 50px;
+	width: 75px;
 	margin-right: 10px;
 	vertical-align: top;
 	overflow: hidden;
@@ -361,16 +365,26 @@ article .credits span {
 
 .sidebar-latest .featured img {
 	max-width: initial;
-	height: 50px;
+	height: 75px;
 }
 
 .sidebar-latest .headline {
 	display: inline-block;
-	width: calc(100% - 65px);
+	width: calc(100% - 90px);
 }
 
-.sidebar-latest .headline p {
+.sidebar-latest .headline .title,
+.sidebar-latest .headline .date {
 	margin: 0;
+}
+
+.sidebar-latest .headline .date {
+	font-size: .8em;
+	color: #999;
+}
+
+.sidebar-latest .headline .date i {
+	margin-right: 5px;
 }
 
 .sidebar-ads {
@@ -400,7 +414,7 @@ footer {
 	margin-top: 50px;
 	background: #00428a;
 	color: #eee;
-	font-size: 14px;
+	font-size: .9em;
 }
 
 footer .footer-top {
@@ -413,7 +427,7 @@ footer .footer-top .footer-info {
 }
 
 footer .footer-top .footer-info h3 {
-	font-size: 34px;
+	font-size: 2em;
 	margin: 0 0 20px 0;
 	padding: 2px 0 2px 0;
 	color: #fff;
@@ -422,7 +436,7 @@ footer .footer-top .footer-info h3 {
 }
 
 footer .footer-top .social-links a {
-	font-size: 18px;
+	font-size: 1.2em;
 	display: inline-block;
 	background: #00aff0;
 	color: #fff;
@@ -442,7 +456,6 @@ footer .footer-top .social-links a:hover {
 }
 
 footer .footer-top h4 {
-	font-size: 14px;
 	font-family: "Ubuntu", sans-serif;
 	font-weight: bold;
 	color: #fff;
