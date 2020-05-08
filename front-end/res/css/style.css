@@ -233,6 +233,21 @@ header {
 	margin-bottom: 50px;
 }
 
+.widget-category-large {
+	float: left;
+	width: 100%;
+}
+
+.widget-category-medium {
+	float: left;
+	width: 50%;
+}
+
+.widget-category-small {
+	float: left;
+	width: 25%;
+}
+
 article h1,
 article h2,
 article h3,
