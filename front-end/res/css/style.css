@@ -233,6 +233,40 @@ header {
 	margin-bottom: 50px;
 }
 
+.latest-slider .primary h1 {
+	font-size: 1.8em;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.latest-slider .secondary .news-item:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.latest-slider .secondary img {
+	width: calc(50% - 5px);
+	margin-right: 5px;
+}
+
+.latest-slider .secondary h2 {
+	display: inline;
+	width: 50%;
+	margin: 0;
+	font-size: 1em;
+	vertical-align: top;
+}
+
+.widget-category-container {
+	padding: 0;
+}
+
+.widget-category-large,
+.widget-category-medium,
+.widget-category-small {
+	padding: 0 15px
+}
+
 .widget-category-large {
 	float: left;
 	width: 100%;
@@ -381,6 +415,7 @@ article .credits span {
 .sidebar-latest .featured img {
 	max-width: initial;
 	height: 75px;
+	margin-left: -50%;
 }
 
 .sidebar-latest .headline {
@@ -391,6 +426,14 @@ article .credits span {
 .sidebar-latest .headline .title,
 .sidebar-latest .headline .date {
 	margin: 0;
+}
+
+.sidebar-latest .headline .title {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
 }
 
 .sidebar-latest .headline .date {
@@ -441,15 +484,6 @@ footer .footer-top .footer-info {
 	margin-bottom: 50px;
 }
 
-footer .footer-top .footer-info h3 {
-	font-size: 2em;
-	margin: 0 0 20px 0;
-	padding: 2px 0 2px 0;
-	color: #fff;
-	font-family: "Ubuntu", sans-serif;
-	font-weight: bold;
-}
-
 footer .footer-top .social-links a {
 	font-size: 1.2em;
 	display: inline-block;
@@ -494,6 +528,12 @@ footer .footer-top .footer-links ul li {
 
 footer .footer-top .footer-links ul li:first-child {
 	padding-top: 0;
+}
+
+footer .footer-top img {
+	width: 80%;
+	height: auto;
+	max-width: 180px;
 }
 
 footer .footer-top a {
