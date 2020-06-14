@@ -530,18 +530,6 @@ footer .credits a:hover {
 	color: #f1f7ff;
 }
 
-@media (max-width: 767px) {
-	/* Below small devices */
-}
-
-@media (max-width: 991px) {
-	/* Below medium devices */
-}
-
-@media (max-width: 1199px) {
-	/* Below large devices */
-}
-
 @media (min-width: 768px) {
 	/* Small devices */
 }
