@@ -7,7 +7,7 @@
 body {
 	padding-top: 180px;
 	background: #fff;
-	font-family: "Roboto", sans-serif;
+	font-family: "Lato", sans-serif;
 	font-size: 16px;
 	line-height: 1.618em;
 	color: #424242;
@@ -41,7 +41,7 @@ header {
 	background: #fff;
 	z-index: 100;
 	box-shadow: 0 0 15px 0 rgba(0, 0, 0, .25);
-	font-family: "Ubuntu", sans-serif;
+	font-family: "Raleway", sans-serif;
 }
 
 .main-nav {
@@ -175,6 +175,7 @@ header {
 
 .category-nav li.active {
 	background: #ddd;
+	font-weight: bold;
 }
 
 .latest-slider {
@@ -285,17 +286,14 @@ article h6 {
 	margin: 0 0 30px;
 }
 
-.post-breadcrumb {
-	font-size: .9em;
-}
-
 .post-breadcrumb i {
 	margin: 0 5px;
 }
 
 .post-headline h1 {
 	margin: 15px 0 5px;
-	font-family: "Ubuntu", sans-serif;
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
 }
 
 .post-date {
@@ -471,7 +469,7 @@ footer .footer-top .social-links a:hover {
 }
 
 footer .footer-top h4 {
-	font-family: "Ubuntu", sans-serif;
+	font-family: "Raleway", sans-serif;
 	font-weight: bold;
 	color: #fff;
 	position: relative;
