@@ -245,7 +245,8 @@ header {
 }
 
 .latest-slider .secondary img {
-	width: calc(50% - 5px);
+	display: inline-block;
+	width: 40%;
 	margin-right: 5px;
 }
 
@@ -253,7 +254,8 @@ header {
 	display: inline-block;
 	width: 50%;
 	margin: 0;
-	font-size: 1em;
+	font-size: .9em;
+	line-height: 1.25em;
 	vertical-align: top;
 }
 
