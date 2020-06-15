@@ -55,14 +55,14 @@ header {
   list-style: none;
 }
 
-.main-nav > ul > li {
+.main-nav>ul>li {
   position: relative;
   white-space: nowrap;
   float: left;
   padding: 0 15px;
 }
 
-.main-nav > ul > li:last-child {
+.main-nav>ul>li:last-child {
   padding-right: 0;
 }
 
@@ -76,8 +76,8 @@ header {
 }
 
 .main-nav a:hover,
-.main-nav .active > a,
-.main-nav li:hover > a {
+.main-nav .active>a,
+.main-nav li:hover>a {
   color: #00aff0;
 }
 
@@ -96,7 +96,7 @@ header {
   border-top-right-radius: 30px;
 }
 
-.main-nav .drop-down:hover > ul {
+.main-nav .drop-down:hover>ul {
   opacity: 100%;
   visibility: visible;
 }
@@ -113,12 +113,12 @@ header {
 }
 
 .main-nav .drop-down ul a:hover,
-.main-nav .drop-down ul .active > a,
-.main-nav .drop-down ul li:hover > a {
+.main-nav .drop-down ul .active>a,
+.main-nav .drop-down ul li:hover>a {
   color: #00aff0;
 }
 
-.main-nav .drop-down > a:after {
+.main-nav .drop-down>a:after {
   content: "\f107";
   font-family: "Font Awesome 5 Free";
   font-weight: bold;
@@ -130,13 +130,13 @@ header {
   left: calc(100% - 30px);
 }
 
-.main-nav .drop-down .drop-down:hover > ul {
+.main-nav .drop-down .drop-down:hover>ul {
   opacity: 100%;
   top: 0;
   left: 100%;
 }
 
-.main-nav .drop-down .drop-down > a {
+.main-nav .drop-down .drop-down>a {
   padding-right: 35px;
 }
 
