@@ -15,7 +15,7 @@ body {
 
 a {
   color: #00aff0;
-  transition: 0.25s;
+  transition: .25s;
   cursor: pointer;
 }
 
@@ -40,7 +40,7 @@ header {
   line-height: 90px;
   background: #fff;
   z-index: 100;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, .25);
   font-family: "Raleway", sans-serif;
 }
 
@@ -70,8 +70,8 @@ header {
   display: block;
   position: relative;
   color: #004289;
-  transition: 0.25s;
-  font-size: 0.9em;
+  transition: .25s;
+  font-size: .9em;
   font-weight: 500;
 }
 
@@ -91,8 +91,8 @@ header {
   visibility: hidden;
   padding: 10px 0;
   background: #fff;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
-  transition: ease all 0.25s;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .25);
+  transition: ease all .25s;
   border-top-right-radius: 30px;
 }
 
@@ -143,7 +143,7 @@ header {
 .category-nav {
   line-height: 45px;
   background: #eee;
-  font-size: 0.9em;
+  font-size: .9em;
 }
 
 .category-nav ul {
@@ -189,44 +189,58 @@ header {
   white-space: nowrap;
 }
 
-.latest-slider .primary .date {
+.latest-slider .primary .date,
+.widget-category-large .date,
+.widget-category-medium .date,
+.widget-category-small .date {
   margin-top: 5px;
-  font-size: 0.9em;
+  font-size: .9em;
   line-height: 1.25em;
   color: #999;
 }
 
-.latest-slider .secondary .news-item:not(:last-child) {
-  margin-bottom: 10px;
+.latest-slider .secondary .news-item:not(:last-child),
+.widget-category-large .news-item,
+.widget-category-medium .news-item,
+.widget-category-small .news-item {
+  overflow: hidden;
+  margin-bottom: 15px;
 }
 
-.latest-slider .secondary img {
+.latest-slider .secondary img,
+.widget-category-large .small-feed .image,
+.widget-category-small .image {
   float: left;
+  clear: both;
   width: 40%;
-  margin-right: 5px;
+  margin-right: 5%;
 }
 
-.latest-slider .secondary .title {
-  display: inline-block;
-  width: 50%;
-  padding-left: 5px;
+.latest-slider .secondary .title,
+.widget-category-large .small-feed .title,
+.widget-category-small .title {
+  float: left;
+  width: 55%;
 }
 
-.latest-slider .secondary h2 {
+.latest-slider .secondary h2,
+.widget-category-large .small-feed h2 {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
-  font-size: 0.9em;
+  font-size: 1em;
+  font-weight: bold;
   line-height: 1.5em;
   vertical-align: top;
 }
 
-.latest-slider .secondary .date {
+.latest-slider .secondary .date,
+.widget-category-large .small-feed .date {
   margin-top: 5px;
-  font-size: 0.75em;
+  font-size: .75em;
   line-height: 1.25em;
   color: #999;
 }
@@ -247,12 +261,19 @@ header {
   padding: 0 15px;
 }
 
-.widget-category-large .title,
-.widget-category-medium .title,
-.widget-category-small .title {
+.widget-category-large .category-title,
+.widget-category-medium .category-title,
+.widget-category-small .category-title {
+  margin-bottom: 15px;
   padding-bottom: 5px;
   font-weight: bold;
   border-bottom: 1px solid #ddd;
+}
+
+.category-title a {
+  display: block;
+  float: right;
+  color: #bbb;
 }
 
 .widget-category-large .image,
@@ -276,39 +297,36 @@ header {
   vertical-align: top;
 }
 
+.widget-category-small h2 {
+  -webkit-line-clamp: 2;
+  font-size: 1em;
+}
+
 .widget-category-large {
   float: left;
   width: 100%;
   background: #eee;
 }
 
-.widget-category-large .left,
-.widget-category-large .right {
-  float: left;
-  width: calc(50% - 15px);
-}
-
-.widget-category-large .left {
-  margin-right: 30px;
-}
-
-.widget-category-large .feed-title {
+.widget-category-large .feed-excerpt,
+.widget-category-medium .feed-excerpt {
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   vertical-align: top;
+  color: #424242;
 }
 
-.widget-category-medium {
-  float: left;
-  width: 50%;
+.widget-category-medium .small-feed h2,
+.widget-category-small .small-feed h2 {
+  font-size: 1em;
 }
 
-.widget-category-small {
-  float: left;
-  width: 25%;
+.widget-category-medium .small-feed .date,
+.widget-category-small .small-feed .date {
+  font-size: .75em;
 }
 
 article h1,
@@ -360,7 +378,7 @@ article h6 {
 
 .post-date {
   margin-bottom: 15px;
-  font-size: 0.8em;
+  font-size: .8em;
   color: #999;
 }
 
@@ -372,7 +390,7 @@ article .credits {
   margin: 50px 0 30px;
   padding: 15px;
   background: #eee;
-  font-size: 0.9em;
+  font-size: .9em;
   line-height: 1.618em;
 }
 
@@ -430,7 +448,9 @@ article .credits span {
   border-top: 1px solid #ddd;
 }
 
-.sidebar-latest .featured {
+.sidebar-latest .featured,
+.widget-category-medium .small-feed .image,
+.widget-category-small .small-feed .image {
   display: inline-block;
   width: 75px;
   margin-right: 10px;
@@ -438,13 +458,17 @@ article .credits span {
   overflow: hidden;
 }
 
-.sidebar-latest .featured img {
+.sidebar-latest .featured img,
+.widget-category-medium .small-feed img,
+.widget-category-small .small-feed img {
   max-width: initial;
   height: 75px;
   margin-left: -50%;
 }
 
-.sidebar-latest .headline {
+.sidebar-latest .headline,
+.widget-category-medium .small-feed .title,
+.widget-category-small .small-feed .title {
   display: inline-block;
   width: calc(100% - 90px);
 }
@@ -460,14 +484,15 @@ article .credits span {
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-weight: bold;
 }
 
 .sidebar-latest .headline .date {
-  font-size: 0.8em;
+  font-size: .75em;
   color: #999;
 }
 
-.sidebar-latest .headline .date i {
+.date i {
   margin-right: 5px;
 }
 
@@ -491,14 +516,14 @@ article .credits span {
 
 .sidebar-category i {
   margin-right: 5px;
-  font-size: 0.75em;
+  font-size: .75em;
 }
 
 footer {
   margin-top: 50px;
   background: #00428a;
   color: #eee;
-  font-size: 0.9em;
+  font-size: .9em;
 }
 
 footer .footer-top {
@@ -521,7 +546,7 @@ footer .footer-top .social-links a {
   text-align: center;
   width: 36px;
   height: 36px;
-  transition: 0.25s;
+  transition: .25s;
   line-height: 1em;
 }
 
@@ -597,9 +622,7 @@ footer .credits a:hover {
 }
 
 @media (min-width: 992px) {
-  .row {
-    padding: 0 30px !important;
-  }
+  /* Small devices */
 }
 
 @media (min-width: 1200px) {
