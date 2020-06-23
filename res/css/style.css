@@ -569,7 +569,7 @@ article .credits span {
 
 .sidebar-submission a {
   display: block;
-  width: 80%;
+  width: 90%;
   max-width: 400px;
   padding-left: 15px;
   font-weight: bold;
@@ -702,6 +702,9 @@ footer .copyright {
 }
 
 @media (min-width: 992px) {
+  aside {
+    padding-left: 35px !important;
+  }
 
   .latest-slider .primary hr,
   .widget-category-large hr,
@@ -719,6 +722,9 @@ footer .copyright {
 }
 
 @media (min-width: 1200px) {
+  aside {
+    padding-left: 55px !important;
+  }
 
   .widget-category-large .feed-excerpt,
   .widget-category-medium .feed-excerpt {
