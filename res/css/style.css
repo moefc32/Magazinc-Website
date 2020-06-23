@@ -404,19 +404,19 @@ article h6 {
 }
 
 article h1 {
-  font-size: 1.8em;
+  font-size: 2em;
 }
 
 article h2 {
-  font-size: 1.7em;
+  font-size: 1.85em;
 }
 
 article h3 {
-  font-size: 1.6em;
+  font-size: 1.7em;
 }
 
 article h4 {
-  font-size: 1.5em;
+  font-size: 1.55em;
 }
 
 article h5 {
@@ -424,7 +424,7 @@ article h5 {
 }
 
 article h6 {
-  font-size: 1.3em;
+  font-size: 1.25em;
 }
 
 .post-header {
@@ -574,9 +574,10 @@ article .credits span {
   padding-left: 15px;
   font-weight: bold;
   line-height: 50px;
-  background: url(../img/m.svg) calc(100% + 50px) center no-repeat, #ddd;
+  background: url(../img/m.svg) calc(100% + 50px) center no-repeat, #eee;
   background-size: 50px;
   color: #424242;
+  border: 1px solid #ddd;
   border-radius: 15px;
 }
 
@@ -663,7 +664,7 @@ footer .footer-top .license hr {
   width: 30px;
   height: 2px;
   background: #fff;
-  border: 0;
+  border: none;
 }
 
 footer .footer-top .license p {
@@ -704,6 +705,10 @@ footer .copyright {
 @media (min-width: 992px) {
   aside {
     padding-left: 35px !important;
+  }
+
+  .latest-slider .primary h1 {
+    -webkit-line-clamp: 1;
   }
 
   .latest-slider .primary hr,
