@@ -496,7 +496,8 @@ article .credits span {
 }
 
 .sidebar-latest h4,
-.sidebar-category h4 {
+.sidebar-category h4,
+.sidebar-submission h4 {
   margin: 15px 0;
   padding: 0 15px;
   background: #00aff0;
@@ -508,7 +509,8 @@ article .credits span {
 }
 
 .sidebar-latest,
-.sidebar-category {
+.sidebar-category,
+.sidebar-submission {
   margin: 30px 0;
 }
 
@@ -542,10 +544,6 @@ article .credits span {
   width: calc(100% - 90px);
 }
 
-.date i {
-  margin-right: 5px;
-}
-
 .sidebar-sponsorship {
   margin: 30px 0;
   text-align: center;
@@ -567,6 +565,33 @@ article .credits span {
 .sidebar-category i {
   margin-right: 5px;
   font-size: .75em;
+}
+
+.sidebar-submission a {
+  display: block;
+  width: 80%;
+  max-width: 400px;
+  padding-left: 15px;
+  font-weight: bold;
+  line-height: 50px;
+  background: url(../img/m.svg) calc(100% + 50px) center no-repeat, #ddd;
+  background-size: 50px;
+  color: #424242;
+  border-radius: 15px;
+}
+
+.sidebar-submission a:hover {
+  background: url(../img/m.svg) right center no-repeat, #00aff0;
+  background-size: 50px;
+  color: #fff;
+}
+
+.sidebar-submission a:not(:first-child) {
+  margin-top: 5px;
+}
+
+.sidebar-submission i {
+  margin-right: 5px;
 }
 
 footer {
