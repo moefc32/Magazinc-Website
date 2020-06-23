@@ -5,7 +5,7 @@
 }
 
 body {
-  padding-top: 160px;
+  padding-top: 170px;
   background: #fff;
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -33,6 +33,11 @@ hr {
 
 img {
   max-width: 100%;
+  transition: .25s;
+}
+
+img:hover {
+  opacity: 90%;
 }
 
 select {
@@ -46,10 +51,12 @@ article h4,
 article h5,
 article h6,
 .latest-slider .primary h1,
+.latest-slider .secondary h2,
 .post-headline h1,
 .widget-category-large h2,
 .widget-category-medium h2,
 .widget-category-small h2,
+.sidebar-latest h2,
 .widget-category-large .category-title,
 .widget-category-medium .category-title,
 .widget-category-small .category-title,
@@ -231,6 +238,18 @@ header {
   margin-bottom: 50px;
 }
 
+.latest-slider .date a {
+  color: #888;
+}
+
+.latest-slider .date a:hover {
+  color: #00aff0;
+}
+
+.latest-slider .date a i {
+  margin-left: 15px;
+}
+
 .latest-slider .primary h1 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -255,8 +274,8 @@ header {
 .widget-category-small .image {
   float: left;
   clear: both;
-  width: 45%;
-  margin-right: 5%;
+  width: calc(50% - 15px);
+  margin-right: 15px;
 }
 
 .latest-slider .secondary .title,
@@ -268,8 +287,8 @@ header {
 .widget-category-large .small-feed .image {
   float: left;
   clear: both;
-  width: 35%;
-  margin-right: 5%;
+  width: calc(40% - 15px);
+  margin-right: 15px;
 }
 
 .widget-category-large .small-feed .title {
@@ -285,7 +304,6 @@ header {
   overflow: hidden;
   text-overflow: ellipsis;
   margin: 0;
-  font-size: 1em;
   font-weight: bold;
   line-height: 1.618em;
   vertical-align: top;
@@ -299,7 +317,8 @@ header {
   margin: 0 0 30px;
   padding: 15px;
   background: #eee;
-  border: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
 }
 
 .widget-category-medium,
@@ -336,7 +355,8 @@ header {
 
 .widget-category-large h2,
 .widget-category-medium h2,
-.widget-category-small h2 {
+.widget-category-small h2,
+.sidebar-latest h2 {
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -365,8 +385,12 @@ header {
   color: #424242;
 }
 
+.latest-slider .secondary h2,
+.widget-category-large .small-feed h2,
 .widget-category-medium .small-feed h2,
-.widget-category-small .small-feed h2 {
+.widget-category-small .small-feed h2,
+.sidebar-latest h2 {
+  margin: 0;
   font-size: 1em;
 }
 
@@ -426,10 +450,6 @@ article h6 {
   margin-right: 5px;
 }
 
-.date i:not(:first-child) {
-  margin-left: 15px;
-}
-
 article .credits {
   margin: 50px 0 30px;
   padding: 15px;
@@ -478,8 +498,8 @@ article .credits span {
 .sidebar-latest h4,
 .sidebar-category h4 {
   margin: 15px 0;
-  padding: 0 15px 0 40px;
-  background: url(../img/m.svg) left center no-repeat, #00aff0;
+  padding: 0 15px;
+  background: #00aff0;
   color: #fff;
   font-size: 1em;
   font-weight: bold;
@@ -520,22 +540,6 @@ article .credits span {
 .widget-category-small .small-feed .title {
   display: inline-block;
   width: calc(100% - 90px);
-}
-
-.sidebar-latest .title .headline,
-.widget-category-large .small-feed h2,
-.widget-category-medium .small-feed h2,
-.widget-category-small .small-feed h2 {
-  margin: 0;
-}
-
-.sidebar-latest .title .headline {
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-weight: bold;
 }
 
 .date i {
@@ -668,6 +672,7 @@ footer .copyright {
 @media (min-width: 768px) {
   .widget-category-large {
     margin: 0 15px 30px;
+    border: 1px solid #ddd;
   }
 }
 
@@ -697,5 +702,43 @@ footer .copyright {
 }
 
 @media print {
-  /* Print */
+  body {
+    padding: 0;
+  }
+
+  hr {
+    background: none;
+    border-top: solid 1px #888;
+  }
+
+  article .credits {
+    margin: 50px 0;
+    padding: 0;
+    font-size: .9em;
+  }
+
+  .print-notice {
+    page-break-inside: avoid;
+    font-size: .75em;
+    line-height: 1.2em;
+  }
+
+  .print-notice hr {
+    width: 4.5cm;
+  }
+
+  .print-notice img {
+    display: block;
+    float: left;
+    width: 2.5cm;
+    margin-right: .25cm;
+  }
+
+  header,
+  aside,
+  footer,
+  .landing-content,
+  .post-breadcrumb {
+    display: none;
+  }
 }
