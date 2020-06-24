@@ -256,7 +256,7 @@ header {
   margin-bottom: 15px;
 }
 
-.latest-slider .secondary img,
+.latest-slider .secondary .image,
 .widget-category-small .image {
   float: left;
   clear: both;
@@ -311,6 +311,11 @@ header {
 .widget-category-small {
   margin-bottom: 30px;
   padding: 0 15px;
+}
+
+.widget-category-medium:nth-child(odd),
+.widget-category-small:nth-child(odd) {
+  clear: left;
 }
 
 .widget-category-large .category-title,
