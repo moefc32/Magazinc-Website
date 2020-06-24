@@ -18,16 +18,15 @@
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-4">
+				<div class="col-xs-10 col-sm-4">
 					<a href="#">
 						<img src="res/img/magazinc.svg" alt="Logo">
 					</a>
-					<div class="visible-xs-inline pull-right">
-						<i class="fas fa-bars fa-fw"></i>
-					</div>
 				</div>
-				<div class="col-sm-8 hidden-xs">
-					<nav class="main-nav hidden-xs">
+				<div class="col-xs-2 col-sm-8">
+					<nav class="main-nav">
+						<input type="checkbox" id="menu-toggle" class="visible-xs-block">
+						<i class="visible-xs-block hamburger-menu"></i>
 						<ul>
 							<li class="drop-down"><a>Tentang Kami</a>
 								<ul>
@@ -46,7 +45,10 @@
 								</ul>
 							</li>
 							<li><a href="#">E-Magazinc!</a></li>
-							<li><a href="#"><i class="fa fa-fw fa-search"></i></a></li>
+							<li><a href="#">
+								<i class="fa fa-fw fa-search hidden-xs"></i>
+								<span class="visible-xs-inline">Cari...</span>
+							</a></li>
 						</ul>
 					</nav>
 				</div>
