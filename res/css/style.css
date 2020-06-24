@@ -150,7 +150,7 @@ header {
 .main-nav>ul {
   position: fixed;
   top: 0;
-  left: -100vw;
+  left: -120vw;
   width: 100vw;
   height: 100vh;
   padding-top: 15px;
@@ -560,7 +560,9 @@ article .credits span {
   padding-left: 15px;
   font-weight: bold;
   line-height: 50px;
-  background: url(../img/m.svg) calc(100% + 50px) center no-repeat, #eee;
+  background:
+    url(../img/m.svg) calc(100% + 50px) center no-repeat,
+    #eee;
   background-size: 50px;
   color: #424242;
   border: 1px solid #ddd;
@@ -568,7 +570,9 @@ article .credits span {
 }
 
 .sidebar-submission a:hover {
-  background: url(../img/m.svg) right center no-repeat, #00aff0;
+  background:
+    url(../img/m.svg) right center no-repeat,
+    #00aff0;
   color: #fff;
 }
 
@@ -681,6 +685,10 @@ footer .copyright {
 }
 
 @media (min-width: 768px) {
+  body {
+    position: initial !important;
+  }
+
   .main-nav {
     float: right;
     line-height: 90px;
