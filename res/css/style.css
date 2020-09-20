@@ -260,26 +260,41 @@ header {
 .widget-category-small .image {
   float: left;
   clear: both;
-  width: calc(50% - 15px);
+  width: 50%;
   margin-right: 15px;
+  
+  position: relative;
+  padding-bottom: 25%;
+  background:
+    url(../img/placeholder.svg) center center no-repeat,
+    #eee;
+  background-size: 50%;
+}
+
+.latest-slider .secondary .image img,
+.widget-category-small .image img {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  transform: translate(50%, 50%);
 }
 
 .latest-slider .secondary .title,
 .widget-category-small .title {
   float: left;
-  width: 50%;
+  width: calc(50% - 15px);
 }
 
 .widget-category-large .small-feed .image {
   float: left;
   clear: both;
-  width: calc(40% - 15px);
+  width: 40%;
   margin-right: 15px;
 }
 
 .widget-category-large .small-feed .title {
   float: left;
-  width: 60%;
+  width: calc(60% - 15px);
 }
 
 .latest-slider .secondary h2,
