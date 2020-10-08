@@ -257,22 +257,20 @@ header {
 }
 
 .latest-slider .secondary .image,
-.widget-category-small .image {
+.widget-category-small .primary .image {
+  position: relative;
   float: left;
   clear: both;
   width: 50%;
   margin-right: 15px;
-  
-  position: relative;
   padding-bottom: 25%;
-  background:
-    url(../img/placeholder.svg) center center no-repeat,
+  background: url(../img/placeholder.svg) center center no-repeat,
     #eee;
   background-size: 50%;
 }
 
 .latest-slider .secondary .image img,
-.widget-category-small .image img {
+.widget-category-small .primary .image img {
   position: absolute;
   top: -50%;
   left: -50%;
@@ -280,7 +278,7 @@ header {
 }
 
 .latest-slider .secondary .title,
-.widget-category-small .title {
+.widget-category-small .primary .title {
   float: left;
   width: calc(50% - 15px);
 }
@@ -290,6 +288,8 @@ header {
   clear: both;
   width: 40%;
   margin-right: 15px;
+  background: url(../img/placeholder.svg) center center no-repeat,
+    #eee;
 }
 
 .widget-category-large .small-feed .title {
@@ -352,11 +352,6 @@ header {
   display: block;
   float: right;
   color: #bbb;
-}
-
-.widget-category-large .image,
-.widget-category-medium .image {
-  margin-bottom: 10px;
 }
 
 .widget-category-large h2,
@@ -533,6 +528,8 @@ article .credits span {
   margin-right: 10px;
   vertical-align: top;
   overflow: hidden;
+  background: url(../img/placeholder.svg) center center no-repeat,
+    #eee;
 }
 
 .sidebar-latest .image img,
