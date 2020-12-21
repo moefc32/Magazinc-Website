@@ -1,2 +1,2 @@
-# WP-Magazinc
-Tema WordPress untuk Magazinc!
+# Magazinc! Website
+Mockup Website untuk Magazinc!
