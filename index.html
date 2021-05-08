@@ -10,8 +10,9 @@
   <link rel="icon" sizes="512x512" href="res/img/favicon.svg">
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="res/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+  <link rel="stylesheet" href="res/css/style.css">
 </head>
 
 <body>
@@ -143,11 +144,11 @@
       <section class="col-md-8 widget-category-container">
         <div class="widget-category-large">
           <p class="category-title">Pendidikan dan Kampus
-            <a href="#" title="Lihat semua..."><i class="fas fa-angle-double-right"></i></a>
+            <a href="#" data-toggle="tooltip" data-placement="left" title="Lihat semua..."><i class="fas fa-angle-double-right"></i></a>
           </p>
           <div class="row">
             <div class="col-md-6">
-              <div class="news-item primary">
+              <div class="news-item primary" data-aos="zoom-in-up">
                 <a href="#">
                   <div class="image">
                     <img src="res/img/artikel/coursera.jpg" alt="">
@@ -167,7 +168,7 @@
               <hr>
             </div>
             <div class="col-md-6 small-feed">
-              <div class="news-item">
+              <div class="news-item" data-aos="zoom-in-up">
                 <a href="#">
                   <div class="image">
                     <img src="res/img/artikel/quickisk.jpg" alt="">
@@ -178,7 +179,7 @@
                   </div>
                 </a>
               </div>
-              <div class="news-item">
+              <div class="news-item" data-aos="zoom-in-up">
                 <a href="#">
                   <div class="image">
                     <img src="res/img/artikel/subsidi.jpg" alt="">
@@ -189,7 +190,7 @@
                   </div>
                 </a>
               </div>
-              <div class="news-item">
+              <div class="news-item" data-aos="zoom-in-up">
                 <a href="#">
                   <div class="image">
                     <img src="res/img/artikel/deklarasi.jpg" alt="">
@@ -204,128 +205,124 @@
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="col-md-6 widget-category-medium">
-              <p class="category-title">Penelitian dan Lomba
-                <a href="#" title="Lihat semua..."><i class="fas fa-angle-double-right"></i></a>
-              </p>
-              <div class="news-item primary">
-                <a href="#">
-                  <div class="image">
-                    <img src="res/img/artikel/iccomp.jpg" alt="">
-                  </div>
-                  <div class="title">
-                    <h2>Yuk ikutan International Creativity Competition 2020!</h2>
-                    <p class="date"><i class="far fa-clock"></i> 08/06/2020</p>
-                    <p class="feed-excerpt">Ada yang baru nih buat kalian dari selama masa
-                      #stayathome!
-                      Kali ini, Graduate Studies and International Class of Telkom University
-                      mengadakan
-                      International Creativity Competition 2020, di mana kita bisa unjuk karya dan
-                      tentunya berhadiah jutaan rupiah!</p>
-                  </div>
-                </a>
+        <div class="col-md-6 widget-category-medium">
+          <p class="category-title">Penelitian dan Lomba
+            <a href="#" data-toggle="tooltip" data-placement="left" title="Lihat semua..."><i class="fas fa-angle-double-right"></i></a>
+          </p>
+          <div class="news-item primary" data-aos="zoom-in-up">
+            <a href="#">
+              <div class="image">
+                <img src="res/img/artikel/iccomp.jpg" alt="">
               </div>
-              <hr>
-              <div class="small-feed">
-                <div class="news-item">
-                  <a href="#">
-                    <div class="image">
-                      <img src="res/img/artikel/fisiontical.jpg" alt="">
-                    </div>
-                    <div class="title">
-                      <h2>Mahasiswa Telkom University raih juara pada kompetisi Fisiontical 2020
-                      </h2>
-                      <p class="date"><i class="far fa-clock"></i> 07/06/2020</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="news-item">
-                  <a href="#">
-                    <div class="image">
-                      <img src="res/img/artikel/peneliti.jpg" alt="">
-                    </div>
-                    <div class="title">
-                      <h2>Lima peneliti asal Telkom University masuk dalam 500 peneliti terbaik
-                        Indonesia
-                      </h2>
-                      <p class="date"><i class="far fa-clock"></i> 29/05/2020</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="news-item">
-                  <a href="#">
-                    <div class="image">
-                      <img src="res/img/artikel/aumr.jpg" alt="">
-                    </div>
-                    <div class="title">
-                      <h2>Kerja sama dengan LIPI, Tel-U inovasikan robot AUMR pertama di Indonesia
-                      </h2>
-                      <p class="date"><i class="far fa-clock"></i> 15/04/2020</p>
-                    </div>
-                  </a>
-                </div>
+              <div class="title">
+                <h2>Yuk ikutan International Creativity Competition 2020!</h2>
+                <p class="date"><i class="far fa-clock"></i> 08/06/2020</p>
+                <p class="feed-excerpt">Ada yang baru nih buat kalian dari selama masa
+                  #stayathome!
+                  Kali ini, Graduate Studies and International Class of Telkom University
+                  mengadakan
+                  International Creativity Competition 2020, di mana kita bisa unjuk karya dan
+                  tentunya berhadiah jutaan rupiah!</p>
               </div>
+            </a>
+          </div>
+          <hr>
+          <div class="small-feed">
+            <div class="news-item" data-aos="zoom-in-up">
+              <a href="#">
+                <div class="image">
+                  <img src="res/img/artikel/fisiontical.jpg" alt="">
+                </div>
+                <div class="title">
+                  <h2>Mahasiswa Telkom University raih juara pada kompetisi Fisiontical 2020
+                  </h2>
+                  <p class="date"><i class="far fa-clock"></i> 07/06/2020</p>
+                </div>
+              </a>
             </div>
-            <div class="col-md-6 widget-category-medium">
-              <p class="category-title">Pengabdian Masyarakat
-                <a href="#" title="Lihat semua..."><i class="fas fa-angle-double-right"></i></a>
-              </p>
-              <div class="news-item primary">
-                <a href="#">
-                  <div class="image">
-                    <img src="res/img/artikel/abdimas.jpg" alt="">
-                  </div>
-                  <div class="title">
-                    <h2>Di tengah pandemi, Telkom University tetap lakukan kegiatan Abdimas</h2>
-                    <p class="date"><i class="far fa-clock"></i> 06/06/2020</p>
-                    <p class="feed-excerpt">Meskipun berada dalam kondisi pandemi Covid-19 yang
-                      memaksa
-                      kita untuk tetap di rumah saja dan di tengah-tengah ibadah shaum bulan
-                      Ramadhan,
-                      hal tersebut tidak menyurutkan produktivitas dan keinginan berbagi ilmu dari
-                      dosen-dosen Universitas Telkom.</p>
-                  </div>
-                </a>
+            <div class="news-item" data-aos="zoom-in-up">
+              <a href="#">
+                <div class="image">
+                  <img src="res/img/artikel/peneliti.jpg" alt="">
+                </div>
+                <div class="title">
+                  <h2>Lima peneliti asal Telkom University masuk dalam 500 peneliti terbaik
+                    Indonesia
+                  </h2>
+                  <p class="date"><i class="far fa-clock"></i> 29/05/2020</p>
+                </div>
+              </a>
+            </div>
+            <div class="news-item" data-aos="zoom-in-up">
+              <a href="#">
+                <div class="image">
+                  <img src="res/img/artikel/aumr.jpg" alt="">
+                </div>
+                <div class="title">
+                  <h2>Kerja sama dengan LIPI, Tel-U inovasikan robot AUMR pertama di Indonesia
+                  </h2>
+                  <p class="date"><i class="far fa-clock"></i> 15/04/2020</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 widget-category-medium">
+          <p class="category-title">Pengabdian Masyarakat
+            <a href="#" data-toggle="tooltip" data-placement="left" title="Lihat semua..."><i class="fas fa-angle-double-right"></i></a>
+          </p>
+          <div class="news-item primary" data-aos="zoom-in-up">
+            <a href="#">
+              <div class="image">
+                <img src="res/img/artikel/abdimas.jpg" alt="">
               </div>
-              <hr>
-              <div class="small-feed">
-                <div class="news-item">
-                  <a href="#">
-                    <div class="image">
-                      <img src="res/img/artikel/gugus.jpg" alt="">
-                    </div>
-                    <div class="title">
-                      <h2>Robot AUMR inovasi Telkom University resmi diserahkan kepada Gugus Tugas
-                        Covid-19</h2>
-                      <p class="date"><i class="far fa-clock"></i> 30/05/2020</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="news-item">
-                  <a href="#">
-                    <div class="image">
-                      <img src="res/img/artikel/binatang.jpg" alt="">
-                    </div>
-                    <div class="title">
-                      <h2>Telkom University beri donasi kepada Kebun Binatang Bandung</h2>
-                      <p class="date"><i class="far fa-clock"></i> 29/05/2020</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="news-item">
-                  <a href="#">
-                    <div class="image">
-                      <img src="res/img/artikel/citarum.jpg" alt="">
-                    </div>
-                    <div class="title">
-                      <h2>Kontribusi Telkom University tanam ratusan pohon di DAS Citarum</h2>
-                      <p class="date"><i class="far fa-clock"></i> 12/01/2020</p>
-                    </div>
-                  </a>
-                </div>
+              <div class="title">
+                <h2>Di tengah pandemi, Telkom University tetap lakukan kegiatan Abdimas</h2>
+                <p class="date"><i class="far fa-clock"></i> 06/06/2020</p>
+                <p class="feed-excerpt">Meskipun berada dalam kondisi pandemi Covid-19 yang
+                  memaksa
+                  kita untuk tetap di rumah saja dan di tengah-tengah ibadah shaum bulan
+                  Ramadhan,
+                  hal tersebut tidak menyurutkan produktivitas dan keinginan berbagi ilmu dari
+                  dosen-dosen Universitas Telkom.</p>
               </div>
+            </a>
+          </div>
+          <hr>
+          <div class="small-feed">
+            <div class="news-item" data-aos="zoom-in-up">
+              <a href="#">
+                <div class="image">
+                  <img src="res/img/artikel/gugus.jpg" alt="">
+                </div>
+                <div class="title">
+                  <h2>Robot AUMR inovasi Telkom University resmi diserahkan kepada Gugus Tugas
+                    Covid-19</h2>
+                  <p class="date"><i class="far fa-clock"></i> 30/05/2020</p>
+                </div>
+              </a>
+            </div>
+            <div class="news-item" data-aos="zoom-in-up">
+              <a href="#">
+                <div class="image">
+                  <img src="res/img/artikel/binatang.jpg" alt="">
+                </div>
+                <div class="title">
+                  <h2>Telkom University beri donasi kepada Kebun Binatang Bandung</h2>
+                  <p class="date"><i class="far fa-clock"></i> 29/05/2020</p>
+                </div>
+              </a>
+            </div>
+            <div class="news-item" data-aos="zoom-in-up">
+              <a href="#">
+                <div class="image">
+                  <img src="res/img/artikel/citarum.jpg" alt="">
+                </div>
+                <div class="title">
+                  <h2>Kontribusi Telkom University tanam ratusan pohon di DAS Citarum</h2>
+                  <p class="date"><i class="far fa-clock"></i> 12/01/2020</p>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -344,27 +341,27 @@
         </div>
         <div class="sidebar-category">
           <h4>Kategori</h4>
-          <ul class="sidebar-category">
+          <ul>
             <a href="#">
-              <li><i class="fas fa-tags fa-fw"></i> Pendidikan dan Kampus</li>
+              <li data-aos="fade-left"><i class="fas fa-tags fa-fw"></i> Pendidikan dan Kampus</li>
             </a>
             <a href="#">
-              <li><i class="fas fa-tags fa-fw"></i> Penelitian dan Lomba</li>
+              <li data-aos="fade-left"><i class="fas fa-tags fa-fw"></i> Penelitian dan Lomba</li>
             </a>
             <a href="#">
-              <li><i class="fas fa-tags fa-fw"></i> Pengabdian Masyarakat</li>
+              <li data-aos="fade-left"><i class="fas fa-tags fa-fw"></i> Pengabdian Masyarakat</li>
             </a>
             <a href="#">
-              <li><i class="fas fa-tags fa-fw"></i> Dunia Kerja dan Keprofesian</li>
+              <li data-aos="fade-left"><i class="fas fa-tags fa-fw"></i> Dunia Kerja dan Keprofesian</li>
             </a>
             <a href="#">
-              <li><i class="fas fa-tags fa-fw"></i> Ekstra</li>
+              <li data-aos="fade-left"><i class="fas fa-tags fa-fw"></i> Ekstra</li>
             </a>
             <a href="#">
-              <li><i class="fas fa-tags fa-fw"></i> Kemahasiswaan</li>
+              <li data-aos="fade-left"><i class="fas fa-tags fa-fw"></i> Kemahasiswaan</li>
             </a>
             <a href="#">
-              <li><i class="fas fa-tags fa-fw"></i> Bebas Berisik!</li>
+              <li data-aos="fade-left"><i class="fas fa-tags fa-fw"></i> Bebas Berisik!</li>
             </a>
           </ul>
         </div>
@@ -378,12 +375,12 @@
           </a>
         </div>
       </aside>
-      <section class="col-md-12 widget-category-container">
+      <section class="widget-category-container">
         <div class="col-sm-6 widget-category-small">
           <p class="category-title">Dunia Kerja dan Keprofesian
-            <a href="#" title="Lihat semua..."><i class="fas fa-angle-double-right"></i></a>
+            <a href="#" data-toggle="tooltip" data-placement="left" title="Lihat semua..."><i class="fas fa-angle-double-right"></i></a>
           </p>
-          <div class="news-item primary">
+          <div class="news-item primary" data-aos="zoom-in-up">
             <a href="#">
               <div class="image">
                 <img src="res/img/artikel/leverage.jpg" alt="">
@@ -397,7 +394,7 @@
           </div>
           <hr>
           <div class="small-feed">
-            <div class="news-item">
+            <div class="news-item" data-aos="zoom-in-up">
               <a href="#">
                 <div class="image">
                   <img src="res/img/artikel/sharing.jpg" alt="">
@@ -408,7 +405,7 @@
                 </div>
               </a>
             </div>
-            <div class="news-item">
+            <div class="news-item" data-aos="zoom-in-up">
               <a href="#">
                 <div class="image">
                   <img src="res/img/artikel/progate.jpg" alt="">
@@ -419,7 +416,7 @@
                 </div>
               </a>
             </div>
-            <div class="news-item">
+            <div class="news-item" data-aos="zoom-in-up">
               <a href="#">
                 <div class="image">
                   <img src="res/img/artikel/dirut.jpg" alt="">
@@ -436,9 +433,9 @@
         </div>
         <div class="col-sm-6 widget-category-small">
           <p class="category-title">Ekstra
-            <a href="#" title="Lihat semua..."><i class="fas fa-angle-double-right"></i></a>
+            <a href="#" data-toggle="tooltip" data-placement="left" title="Lihat semua..."><i class="fas fa-angle-double-right"></i></a>
           </p>
-          <div class="news-item primary">
+          <div class="news-item primary" data-aos="zoom-in-up">
             <a href="#">
               <div class="image">
                 <img src="res/img/artikel/ngopi.jpg" alt="">
@@ -451,7 +448,7 @@
           </div>
           <hr>
           <div class="small-feed">
-            <div class="news-item">
+            <div class="news-item" data-aos="zoom-in-up">
               <a href="#">
                 <div class="image">
                   <img src="res/img/artikel/riung.jpg" alt="">
@@ -462,7 +459,7 @@
                 </div>
               </a>
             </div>
-            <div class="news-item">
+            <div class="news-item" data-aos="zoom-in-up">
               <a href="#">
                 <div class="image">
                   <img src="res/img/artikel/creative.jpg" alt="">
@@ -473,7 +470,7 @@
                 </div>
               </a>
             </div>
-            <div class="news-item">
+            <div class="news-item" data-aos="zoom-in-up">
               <a href="#">
                 <div class="image">
                   <img src="res/img/artikel/obike.jpg" alt="">
@@ -488,9 +485,9 @@
         </div>
         <div class="col-sm-6 widget-category-small">
           <p class="category-title">Kemahasiswaan
-            <a href="#" title="Lihat semua..."><i class="fas fa-angle-double-right"></i></a>
+            <a href="#" data-toggle="tooltip" data-placement="left" title="Lihat semua..."><i class="fas fa-angle-double-right"></i></a>
           </p>
-          <div class="news-item primary">
+          <div class="news-item primary" data-aos="zoom-in-up">
             <a href="#">
               <div class="image">
                 <img src="res/img/artikel/ospek.jpg" alt="">
@@ -503,7 +500,7 @@
           </div>
           <hr>
           <div class="small-feed">
-            <div class="news-item">
+            <div class="news-item" data-aos="zoom-in-up">
               <a href="#">
                 <div class="image">
                   <img src="res/img/artikel/asrama.jpg" alt="">
@@ -514,7 +511,7 @@
                 </div>
               </a>
             </div>
-            <div class="news-item">
+            <div class="news-item" data-aos="zoom-in-up">
               <a href="#">
                 <div class="image">
                   <img src="res/img/artikel/tak.jpg" alt="">
@@ -525,7 +522,7 @@
                 </div>
               </a>
             </div>
-            <div class="news-item">
+            <div class="news-item" data-aos="zoom-in-up">
               <a href="#">
                 <div class="image">
                   <img src="res/img/artikel/pemira.jpg" alt="">
@@ -540,9 +537,9 @@
         </div>
         <div class="col-sm-6 widget-category-small">
           <p class="category-title">Bebas Berisik!
-            <a href="#" title="Lihat semua..."><i class="fas fa-angle-double-right"></i></a>
+            <a href="#" data-toggle="tooltip" data-placement="left" title="Lihat semua..."><i class="fas fa-angle-double-right"></i></a>
           </p>
-          <div class="news-item primary">
+          <div class="news-item primary" data-aos="zoom-in-up">
             <a href="#">
               <div class="image">
                 <img src="res/img/artikel/challenge.jpg" alt="">
@@ -555,7 +552,7 @@
           </div>
           <hr>
           <div class="small-feed">
-            <div class="news-item">
+            <div class="news-item" data-aos="zoom-in-up">
               <a href="#">
                 <div class="image">
                   <img src="res/img/artikel/stay.jpg" alt="">
@@ -566,7 +563,7 @@
                 </div>
               </a>
             </div>
-            <div class="news-item">
+            <div class="news-item" data-aos="zoom-in-up">
               <a href="#">
                 <div class="image">
                   <img src="res/img/artikel/jajanan.jpg" alt="">
@@ -577,7 +574,7 @@
                 </div>
               </a>
             </div>
-            <div class="news-item">
+            <div class="news-item" data-aos="zoom-in-up">
               <a href="#">
                 <div class="image">
                   <img src="res/img/artikel/kuliah.jpg" alt="">
@@ -605,27 +602,27 @@
         </div>
         <div class="sidebar-category">
           <h4>Kategori</h4>
-          <ul class="sidebar-category">
+          <ul>
             <a href="#">
-              <li><i class="fas fa-tags fa-fw"></i> Pendidikan dan Kampus</li>
+              <li data-aos="fade-left"><i class="fas fa-tags fa-fw"></i> Pendidikan dan Kampus</li>
             </a>
             <a href="#">
-              <li><i class="fas fa-tags fa-fw"></i> Penelitian dan Lomba</li>
+              <li data-aos="fade-left"><i class="fas fa-tags fa-fw"></i> Penelitian dan Lomba</li>
             </a>
             <a href="#">
-              <li><i class="fas fa-tags fa-fw"></i> Pengabdian Masyarakat</li>
+              <li data-aos="fade-left"><i class="fas fa-tags fa-fw"></i> Pengabdian Masyarakat</li>
             </a>
             <a href="#">
-              <li><i class="fas fa-tags fa-fw"></i> Dunia Kerja dan Keprofesian</li>
+              <li data-aos="fade-left"><i class="fas fa-tags fa-fw"></i> Dunia Kerja dan Keprofesian</li>
             </a>
             <a href="#">
-              <li><i class="fas fa-tags fa-fw"></i> Ekstra</li>
+              <li data-aos="fade-left"><i class="fas fa-tags fa-fw"></i> Ekstra</li>
             </a>
             <a href="#">
-              <li><i class="fas fa-tags fa-fw"></i> Kemahasiswaan</li>
+              <li data-aos="fade-left"><i class="fas fa-tags fa-fw"></i> Kemahasiswaan</li>
             </a>
             <a href="#">
-              <li><i class="fas fa-tags fa-fw"></i> Bebas Berisik!</li>
+              <li data-aos="fade-left"><i class="fas fa-tags fa-fw"></i> Bebas Berisik!</li>
             </a>
           </ul>
         </div>
@@ -702,7 +699,8 @@
             document.write(new Date().getFullYear());
           }
         </script>
-        | Tema oleh <a href="https://mf-chan.com" target="_blank"><strong>Mfc</strong></a>
+        <span>|</span>
+        Tema oleh <a href="https://mf-chan.com" target="_blank"><strong>Mfc</strong></a>
       </div>
     </div>
   </footer>
@@ -717,6 +715,8 @@
 
   <script src="https://kit.fontawesome.com/95849a279d.js" crossorigin="anonymous"></script>
   <script src="res/js/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="res/js/dragscroll.min.js"></script>
   <script src="res/js/main.js"></script>
 </body>
