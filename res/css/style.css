@@ -547,6 +547,10 @@ article .credits span {
     width: calc(100% - 90px);
 }
 
+.title.space {
+    margin-top: 10px;
+}
+
 .sidebar-sponsorship {
     margin: 30px 0;
     text-align: center;
@@ -815,7 +819,7 @@ footer .copyright span {
     }
 
     .widget-category-large {
-        margin: 0 15px 30px;
+        margin: 0 15px 50px;
         border: 1px solid #ddd;
     }
 
